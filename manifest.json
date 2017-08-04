@@ -4,23 +4,26 @@
     // 書き方は公式（https://developer.chrome.com/extensions/manifest）参照
     "manifest_version": 2,
     // 名前
-    "name": "Wait a minute!",
+    "name": "Wait!",
     // 拡張の説明
     "description": "chromeを閉じる際に、閉じるかどうかポップアップを表示します",
     // 拡張のバージョン（アップデートの度に更新必須）
     "version": "1.0",
 
     // ブラウザ上でどう動くか
-    "browzer_action":{
+    "browser_action":{
         // ツールバーに常駐するアイコンの読み込み
         // 指定しないと名前の頭文字になるらしい（Wになるのかな）
-        "default_icon":"icon.jpg"
+        // "default_icon":"icon.jpg",
+        // ツールバーのアイコンをクリックするとポップアップが表示される
+        "default_popup":"popup.html"
     },
 
-    "content_scripts":[
-        {
-            // 読み込むjsファイル
-            "js":["main.js"]
-        }
-    ]
+    "content_scripts":[{
+        // このページの条件下で動く
+        // 指定の仕方に注意、間違えるとchromeで読み込めない
+        "matches": ["https://*/*", "http://*/*"],
+        // 使うjsを読み込む
+        "js":["main.js"]
+    }]
 }
