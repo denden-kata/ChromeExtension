@@ -1,12 +1,12 @@
-{
-  "manifest_version": 2,
-  "name": "Wait a minute!",
-  "description": "chromeを閉じる際に、閉じるかどうかポップアップを表示します",
-  "version": "1.0",
-  "browser_action": {
-    "default_icon": "icon.png"
-  },
-  "background": {
-    "scripts": ["js/jquery.js","js/background.js"]
-  }
+/* manifest.json */
+
+{  
+    // 書き方は公式（https://developer.chrome.com/extensions/manifest）参照
+    "manifest_version": 2,
+    // 名前
+    "name": "Wait a minute!",
+    // 拡張の説明
+    "description": "chromeを閉じる際に、閉じるかどうかポップアップを表示します",
+    // 拡張のバージョン（アップデートの度に更新必須）
+    "version": "1.0"
 }
