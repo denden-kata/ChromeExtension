@@ -4,5 +4,5 @@
 // 実装内容バリバリにミスってるけどそれはまた後に
 
 window.onbeforeunload = function(){
-    return "ブラウザを閉じますか？";
+    return;
 }
