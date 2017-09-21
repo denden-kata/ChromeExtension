@@ -19,7 +19,7 @@ window.onbeforeunload = function(){
 
 
 /*  -----  sample1  -----  */
-// こっちの書き方はよく知らない (addEventListener)
+// こっちの書き方の方が他の機能と干渉しないので推奨らしい
 /*
 window.addEventListener('beforeunload', function(e){
 });
