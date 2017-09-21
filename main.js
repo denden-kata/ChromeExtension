@@ -18,7 +18,6 @@ window.onbeforeunload = function(){
 }
 
 
-
 /*  -----  sample1  -----  */
 // こっちの書き方はよく知らない (addEventListener)
 /*
